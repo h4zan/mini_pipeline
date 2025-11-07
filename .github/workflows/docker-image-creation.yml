@@ -1,15 +1,11 @@
 name: Docker Image 
-
 on:
   push:
     branches: [ "main" ]
 
 jobs:
-
   create-image:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
@@ -22,9 +18,6 @@ jobs:
      steps:
 
       - uses: actions/checkout@v4
-      - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag hello-world:latest --tag mini-app:1.5
-        
       - name: Build the Docker image
       - uses: MaximilianoBz/dockerhub-buildpush@v1.1
         with:
