@@ -29,4 +29,4 @@ jobs:
           push: true
           tags: |
             h4zan/mini-app:latest
-            h4zan/mini-app/demo:1.5
+            h4zan/mini-app:1.5
